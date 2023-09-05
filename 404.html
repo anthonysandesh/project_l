@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        /* Inline CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .error-code {
+            font-size: 120px;
+            color: #e74c3c;
+        }
+        .error-message {
+            font-size: 24px;
+            color: #333;
+        }
+        .back-home {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <div class="error-message">Oops! Page not found.</div>
+        <a href="/" class="back-home">Back to Home</a>
+    </div>
+    <script>
+        // Inline JavaScript for additional functionality (optional)
+        document.querySelector('.back-home').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '/';
+        });
+    </script>
+</body>
+</html>
